@@ -3,14 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bg-ColorChanger</title>
     <style>
-      /* button {
-      } */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container > button {
+        background-image: linear-gradient(
+          to right top,
+          #0a8754,
+          #00927c,
+          #009ba2,
+          #00a2c2,
+          #2ba6d9,
+          #5ca1e5,
+          #8a99e6,
+          #b48edd,
+          #d875c0,
+          #ef5b92,
+          #f14f5a,
+          #dd5815
+        );
+        padding: 10px;
+        outline: none;
+        border: none;
+        color: rgba(0, 0, 0, 0.767);
+        /* color: #651010; */
+      }
     </style>
   </head>
   <body>
-    <button>change background-color</button>
+    <div class="container">
+      <button>change background-color</button>
+    </div>
     <script>
       const body = document.querySelector("body");
       const button = document
